@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zoda | Home</title>
+
+    <link rel="icon" type="image/png" href="/assets/img/zoda-logo.png" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/hero.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- header -->
+        <header>
+
+            <!-- logo -->
+            <a class="logo" href="./" class="logo">
+                <h1>
+                    Zoda
+                </h1>
+            </a>
+
+            <p>Know your Zodiac!</p>
+
+        </header>
+
+        <!-- Desktop Navigation -->
+        <nav class="navigation-large-screen">
+
+            <ul>
+                <li>
+                    <a href="./">Home</a>
+                </li>
+                <li>
+                    <a href="./pages/explore/" target="_blank">Explore</a>
+                </li>
+                <li>
+                    <a href="./pages/people/" target="_blank">People</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <main>
+
+            <section class="content">
+
+                <!-- svg -->
+
+                <div class="hero">
+                    <div class="hero-container">
+                        <ul class="circle-container rotation">
+                            <li class="small-circle"><img src="./assets/img/icons-hero/01-aries-sign-min.png" alt="1"
+                                    width="75"></li>
+                            <li class="small-circle"><img src="./assets/img/icons-hero/02-taurus-sign-min.png" alt="2"
+                                    width="75"></li>
+                            <li class="small-circle"><img src="./assets/img/icons-hero/03-gemini-sign-min.png" alt="3"
+                                    width="75"></li>
+                            <li class="small-circle"><img src="./assets/img/icons-hero/04-cancer-sign-min.png" alt="4"
+                                    width="75"></li>
+                            <li class="small-circle"><img src="./assets/img/icons-hero/05-leo-sign-min.png" alt="5"
+                                    width="75"></li>
+                            <li class="small-circle"><img src="./assets/img/icons-hero/06-virgo-sign-min.png" alt="6"
+                                    width="75"></li>
+                            <li class="small-circle"><img src="./assets/img/icons-hero/07-libra-sign-min.png" alt="7"
+                                    width="75"></li>
+                            <li class="small-circle"><img src="./assets/img/icons-hero/08-scorpio-sign-min.png" alt="8"
+                                    width="75"></li>
+                            <li class="small-circle"><img src="./assets/img/icons-hero/09-sagittarius-sign-min.png"
+                                    alt="9" width="75"></li>
+                            <li class="small-circle"><img src="./assets/img/icons-hero/10-capricorn-sign-min.png"
+                                    alt="10" width="75"></li>
+                            <li class="small-circle"><img src="./assets/img/icons-hero/11-aquarius-sign-min.png"
+                                    alt="11" width="75"></li>
+                            <li class="small-circle"><img src="./assets/img/icons-hero/12-pisces-sign-min.png" alt="12"
+                                    width="75"></li>
+                            <li class="small-circle"><img src="./assets/img/zoda-logo.png" alt="0" width="125">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- input details -->
+                <div action="" class="input-details">
+
+                    <h3>Enter your name and birthday:</h3>
+
+                    <div class="input-div">
+                        <div>
+                            <label for="month">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name...">
+                        </div>
+
+                        <div>
+                            <label for="month"> Birthday:</label>
+                            <input type="date" name="date" id="date" value="2001-01-01">
+                        </div>
+                    </div>
+
+                    <button id="submit">Let's Go</button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer id="footer">
+
+            <a href="./" class="link">
+                <h1>
+                    Zoda
+                </h1>
+            </a>
+            <p class="para text-center">© <span id="year"></span> Zoda | All rights reserved.</p>
+
+        </footer>
+
+        <script>
+            document.querySelector('#year').innerHTML = new Date().getFullYear();
+        </script>
+
+    </div>
+
+    <script>
+
+        // option for disabling animation in mobile
+
+        const isMobile = navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i);
+
+        const diableAnimateForMobile = () => {
+            if (isMobile) {
+                const circleContainer = document.querySelector('.circle-container');
+                const smallCircles = document.querySelectorAll('.small-circle');
+
+                circleContainer.classList.toggle('rotation');
+
+
+                smallCircles.forEach(elem => {
+                    elem.style.animation = 'none';
+                });
+            }
+        }
+
+        // diableAnimateForMobile();
+
+    </script>
+
+    <script src="./assets/js/scipt.js"></script>
+
+</body>
+
+</html>

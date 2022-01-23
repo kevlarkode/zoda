@@ -1,0 +1,241 @@
+.circle-container {
+  position: relative;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  padding: 0;
+  list-style: none;
+  margin: auto 0;
+  background-color: hsla(350, 55%, 51%, 0.521);
+}
+
+.small-circle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -1.5em;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: hsl(350, 55%, 51%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+}
+
+.rotation {
+  animation: rotating 24s linear infinite;
+}
+.reverse-rotation {
+  animation: rev-rotating 240s linear infinite;
+}
+
+.hero .svg {
+  margin: 1rem 0;
+  animation: rotating 24s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rev-rotating {
+  from {
+    transform: rotate(3600deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.circle-container > *:nth-of-type(1) {
+  transform: rotate(0deg) translate(10em) rotate(0deg);
+  animation: rev-rot-1 240s linear infinite;
+}
+
+@keyframes rev-rot-1 {
+  from {
+    transform: rotate(0deg) translate(10em) rotate(0deg) rotate(3600deg);
+  }
+  to {
+    transform: rotate(0deg) translate(10em) rotate(0deg) rotate(0deg);
+  }
+}
+
+.circle-container > *:nth-of-type(2) {
+  transform: rotate(30deg) translate(10em) rotate(-30deg);
+  animation: rev-rot-2 240s linear infinite;
+}
+
+@keyframes rev-rot-2 {
+  from {
+    transform: rotate(30deg) translate(10em) rotate(-30deg) rotate(3600deg);
+  }
+  to {
+    transform: rotate(30deg) translate(10em) rotate(-30deg) rotate(0deg);
+  }
+}
+
+.circle-container > *:nth-of-type(3) {
+  transform: rotate(60deg) translate(10em) rotate(-60deg);
+  animation: rev-rot-3 240s linear infinite;
+}
+
+@keyframes rev-rot-3 {
+  from {
+    transform: rotate(60deg) translate(10em) rotate(-60deg) rotate(3600deg);
+  }
+  to {
+    transform: rotate(60deg) translate(10em) rotate(-60deg) rotate(0deg);
+  }
+}
+
+.circle-container > *:nth-of-type(4) {
+  transform: rotate(90deg) translate(10em) rotate(-90deg);
+  animation: rev-rot-4 240s linear infinite;
+}
+
+@keyframes rev-rot-4 {
+  from {
+    transform: rotate(90deg) translate(10em) rotate(-90deg) rotate(3600deg);
+  }
+  to {
+    transform: rotate(90deg) translate(10em) rotate(-90deg) rotate(0deg);
+  }
+}
+.circle-container > *:nth-of-type(5) {
+  transform: rotate(120deg) translate(10em) rotate(-120deg);
+  animation: rev-rot-5 240s linear infinite;
+}
+
+@keyframes rev-rot-5 {
+  from {
+    transform: rotate(120deg) translate(10em) rotate(-120deg) rotate(3600deg);
+  }
+  to {
+    transform: rotate(120deg) translate(10em) rotate(-120deg) rotate(0deg);
+  }
+}
+
+.circle-container > *:nth-of-type(6) {
+  transform: rotate(150deg) translate(10em) rotate(-150deg);
+  animation: rev-rot-6 240s linear infinite;
+}
+
+@keyframes rev-rot-6 {
+  from {
+    transform: rotate(150deg) translate(10em) rotate(-150deg) rotate(3600deg);
+  }
+  to {
+    transform: rotate(150deg) translate(10em) rotate(-150deg) rotate(0deg);
+  }
+}
+
+.circle-container > *:nth-of-type(7) {
+  transform: rotate(180deg) translate(10em) rotate(-180deg);
+  animation: rev-rot-7 240s linear infinite;
+}
+
+@keyframes rev-rot-7 {
+  from {
+    transform: rotate(180deg) translate(10em) rotate(-180deg) rotate(3600deg);
+  }
+  to {
+    transform: rotate(180deg) translate(10em) rotate(-180deg) rotate(0deg);
+  }
+}
+.circle-container > *:nth-of-type(8) {
+  transform: rotate(210deg) translate(10em) rotate(-210deg);
+  animation: rev-rot-8 240s linear infinite;
+}
+
+@keyframes rev-rot-8 {
+  from {
+    transform: rotate(210deg) translate(10em) rotate(-210deg) rotate(3600deg);
+  }
+  to {
+    transform: rotate(210deg) translate(10em) rotate(-210deg) rotate(0deg);
+  }
+}
+.circle-container > *:nth-of-type(9) {
+  transform: rotate(240deg) translate(10em) rotate(-240deg);
+  animation: rev-rot-9 240s linear infinite;
+}
+
+@keyframes rev-rot-9 {
+  from {
+    transform: rotate(240deg) translate(10em) rotate(-240deg) rotate(3600deg);
+  }
+  to {
+    transform: rotate(240deg) translate(10em) rotate(-240deg) rotate(0deg);
+  }
+}
+.circle-container > *:nth-of-type(10) {
+  transform: rotate(270deg) translate(10em) rotate(-270deg);
+  animation: rev-rot-10 240s linear infinite;
+}
+
+@keyframes rev-rot-10 {
+  from {
+    transform: rotate(270deg) translate(10em) rotate(-270deg) rotate(3600deg);
+  }
+  to {
+    transform: rotate(270deg) translate(10em) rotate(-270deg) rotate(0deg);
+  }
+}
+.circle-container > *:nth-of-type(11) {
+  transform: rotate(300deg) translate(10em) rotate(-300deg);
+  animation: rev-rot-11 240s linear infinite;
+}
+
+@keyframes rev-rot-11 {
+  from {
+    transform: rotate(300deg) translate(10em) rotate(-300deg) rotate(3600deg);
+  }
+  to {
+    transform: rotate(300deg) translate(10em) rotate(-300deg) rotate(0deg);
+  }
+}
+.circle-container > *:nth-of-type(12) {
+  transform: rotate(330deg) translate(10em) rotate(-330deg);
+  animation: rev-rot-12 240s linear infinite;
+}
+
+@keyframes rev-rot-12 {
+  from {
+    transform: rotate(330deg) translate(10em) rotate(-330deg) rotate(3600deg);
+  }
+  to {
+    transform: rotate(330deg) translate(10em) rotate(-330deg) rotate(0deg);
+  }
+}
+
+.circle-container > *:nth-of-type(13) {
+  animation: rev-rot-13 240s linear infinite;
+  filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.75));
+}
+
+@keyframes rev-rot-13 {
+  from {
+    transform: rotate(3600deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .hero-container {
+   transform: scale(0.85);
+  }
+  
+}
