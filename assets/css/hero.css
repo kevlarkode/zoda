@@ -24,6 +24,8 @@
   justify-content: center;
   align-items: center;
   color: #eee;
+
+  filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.5));
 }
 
 .rotation {
@@ -220,7 +222,11 @@
 
 .circle-container > *:nth-of-type(13) {
   animation: rev-rot-13 240s linear infinite;
-  filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.75));
+}
+.circle-container > *:nth-of-type(13) img {
+  filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.5));
+  border: 0.35rem solid #eee;
+  border-radius: 50%;
 }
 
 @keyframes rev-rot-13 {

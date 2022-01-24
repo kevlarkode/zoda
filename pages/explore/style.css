@@ -26,7 +26,7 @@
 }
 
 body {
-  background-color: hsl(253, 43%, 24%);
+  background-color: hsl(252, 43%, 24%);
   font-family: sans-serif;
   font-family: "Montserrat", sans-serif;
   color: #eee;
@@ -159,6 +159,7 @@ footer .link {
 .card {
   background-color: var(--glass);
   box-shadow: 1px 1px 10px 3px hsla(0, 0%, 0%, 0.514);
+  box-shadow: 1px 1px 20px 3px hsla(0, 0%, 100%, 0.25);
   width: fit-content;
   border-radius: 0.5rem;
 
@@ -195,6 +196,10 @@ footer .link {
   background-color: var(--glass-2);
   border-radius: 0 0 0.5rem 0.5rem;
   font-size: 1.4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 .card-footer span {
   padding-top: 1rem;
@@ -207,9 +212,10 @@ footer .link {
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: bold;
+  text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
   .card {
     width: 95%;
   }
