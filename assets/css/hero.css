@@ -6,7 +6,7 @@
   padding: 0;
   list-style: none;
   margin: auto 0;
-  background-color: hsla(350, 55%, 51%, 0.521);
+  background-color: hsl(253, 43%, 20%, 0.5);
 }
 
 .small-circle {
@@ -232,10 +232,8 @@
   }
 }
 
-
 @media screen and (max-width: 800px) {
   .hero-container {
-   transform: scale(0.85);
+    transform: scale(0.85);
   }
-  
 }

@@ -13,8 +13,8 @@
 }
 
 :root {
-  --zoda-theme: hsl(350, 70%, 70%);
-  --zoda-theme-2: hsl(350, 55%, 51%);
+  --glass: hsla(0, 0%, 100%, 0.1);
+  --glass-2: hsla(0, 0%, 100%, 0.2);
 }
 
 *,
@@ -26,27 +26,32 @@
 }
 
 body {
-  background-color: #eeeeee;
-  background-color: hsl(350, 55%, 55%);
+  background-color: hsl(253, 43%, 24%);
   font-family: sans-serif;
   font-family: "Montserrat", sans-serif;
 }
 
 .container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.container-small {
   max-width: 1024px;
   margin: 0 auto;
 }
 
 header {
-  background-color: var(--zoda-theme);
+  background-color: hsl(252, 37%, 35%);
 }
 
 header p {
   text-align: center;
   padding-bottom: 0.75rem;
   font-weight: bold;
-  color: hsl(350, 68%, 20%);
-  letter-spacing: 1.5px;
+  color: #eee;
+  letter-spacing: 2.5px;
+  word-spacing: 3px;
 }
 
 .logo {
@@ -66,12 +71,16 @@ header p {
   font-family: "Montserrat", sans-serif;
 }
 
+nav {
+  background-color: hsl(253, 43%, 18%);
+}
+
 .navigation-large-screen ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1rem;
-  background-color: hsl(350, 55%, 53%);
+  padding: 1.5rem;
+  background-color: hsl(253, 43%, 18%);
 }
 
 .navigation-large-screen ul li {
@@ -87,7 +96,6 @@ header p {
   color: hsl(350, 83%, 9%);
   color: white;
   font-weight: bold;
-  /* font-size: 1.125rem; */
   border-radius: 0.5rem;
   border: 1.5px solid hsl(350, 68%, 28%);
 }
@@ -101,7 +109,7 @@ header p {
 }
 
 .hero {
-  background-color: hsl(350, 70%, 70%);
+  background-color: hsl(253, 43%, 31%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +118,7 @@ header p {
 }
 
 .input-details {
-  background-color: var(--zoda-theme-2);
+  background-color: hsl(253, 43%, 20%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,8 +180,8 @@ header p {
 }
 
 footer {
-  background-color: var(--zoda-theme);
-  color: hsl(350, 68%, 28%);
+  background-color: hsl(252, 37%, 35%);
+  color: #eee;
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -191,8 +199,8 @@ footer p {
 }
 
 footer .link {
+  color: #eee;
   text-decoration: none;
-  color: hsl(350, 68%, 20%);
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1.5px;
 }
