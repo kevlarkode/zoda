@@ -26,9 +26,10 @@
 }
 
 body {
-  background-color: hsl(253, 43%, 24%);
+  background-color: hsl(252, 43%, 24%);
   font-family: sans-serif;
   font-family: "Montserrat", sans-serif;
+  color: #eee;
 }
 
 .container {
@@ -40,6 +41,7 @@ body {
   max-width: 925px;
   margin: 0 auto;
 }
+
 header {
   background-color: hsl(252, 37%, 35%);
 }
@@ -90,7 +92,6 @@ nav {
 .navigation-large-screen ul li a {
   text-decoration: none;
   padding: 0.75rem 1.25rem;
-  background-color: var(--zoda-theme);
   background-color: hsl(350, 45%, 49%);
   color: hsl(350, 83%, 9%);
   color: white;
@@ -107,82 +108,8 @@ nav {
   color: white;
 }
 
-.hero {
-  background-color: hsl(253, 43%, 31%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 1rem;
-  overflow: hidden;
-}
-
-.input-details {
-  background-color: hsl(253, 43%, 20%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 8rem 1rem;
-}
-
-.input-details .input-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.input-details h3 {
-  color: hsl(350, 100%, 95%);
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-}
-
-.input-details input {
-  background-color: rebeccapurple;
-  border: 3px solid hsl(270, 50%, 30%);
-  border-radius: 0.5rem;
-  margin: 0.5rem 0;
-  padding: 1rem;
-  color: #eee;
-  font-size: 1.5rem;
-}
-
-.input-details label {
-  color: hsl(350, 100%, 95%);
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.input-details input::placeholder {
-  color: hsl(0, 0%, 76%);
-}
-
-.input-details #submit {
-  font-size: 1.25rem;
-  background-color: rgb(3, 173, 26);
-  padding: 0.75rem 1.5rem;
-  border: 3px solid green;
-  border-radius: 0.5rem;
-  box-shadow: 1px 1px 10px 1px hsla(0, 0%, 100%, 0.25);
-  margin-top: 1rem;
-  cursor: pointer;
-}
-
-.input-details #submit:active {
-  box-shadow: 1px 1px 10px 2px hsla(0, 0%, 0%, 0.5),
-    inset 1px 1px 10px 5px hsla(125, 56%, 21%, 0.2);
-}
-
 footer {
   background-color: hsl(252, 37%, 35%);
-  color: #eee;
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -196,11 +123,100 @@ footer {
 
 footer p {
   font-family: "Montserrat", sans-serif;
+  color: #eee;
 }
 
 footer .link {
-  color: #eee;
   text-decoration: none;
+  color: #eee;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1.5px;
+}
+
+.cards-div {
+  background-color: hsl(253, 43%, 31%);
+  padding: 1rem;
+}
+
+.cards-div h2 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: white;
+}
+
+.three-items {
+  width: 30% !important;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: var(--glass);
+  box-shadow: 1px 1px 10px 3px hsla(0, 0%, 0%, 0.514);
+  box-shadow: 1px 1px 20px 3px hsla(0, 0%, 100%, 0.25);
+  width: fit-content;
+  border-radius: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0.25rem solid #fff;
+  margin: 1.25rem 0;
+
+  width: 30%;
+
+  cursor: pointer;
+}
+
+.card-header {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  width: 100%;
+  background-color: var(--glass-2);
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  margin: 1rem;
+}
+
+.card-footer {
+  width: 100%;
+  background-color: var(--glass-2);
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-size: 1.4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.card-footer span {
+  padding-top: 1rem;
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.card-footer p {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+  .card {
+    width: 95%;
+  }
 }
