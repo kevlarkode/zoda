@@ -51,32 +51,6 @@
 
         <!-- dynamic content to be injected here -->
 
-        <!-- <div class="error-div">
-            <h2>Loading Error!</h2>
-            <p>Either the url query paramters are misspelt or this is a loading error.</p>
-
-            <div class="btn-div">
-                <button id="reload">Reload</button>
-                <button id="go-home">Go Home</button>
-            </div>
-        </div>
-
-        <script>
-
-            const reload = document.querySelector("#reload");
-            const goHome = document.querySelector("#go-home");
-
-            reload.addEventListener("click", () => {
-                window.location.href = window.location;
-                console.log(window.location)
-            });
-
-            goHome.addEventListener("click", () => {
-                window.location.replace("/");
-            });
-
-        </script> -->
-
     </main>
 
     <footer id="footer">
@@ -95,66 +69,14 @@
     </script>
 
     <script>
-
-        window.addEventListener("DOMContentLoaded", () => {
-            try {
-
-                const urlParams = new URLSearchParams(window.location.search);
-                const queryParamZodiacSign = urlParams.get('sign');
-                // const name = urlParams.get('name');
-
-                const head = document.querySelector("head");
-
-                // inject Zodiac Sign info
-                const signTag = document.createElement("script");
-                signTag.src = `./js/${queryParamZodiacSign}.js`;
-                signTag.defer = true;
-                signTag.type = 'text/javascript';
-
-                // inject script tag
-                const scriptTag = document.createElement("script");
-                scriptTag.src = `./script.js`;
-                scriptTag.defer = true;
-                scriptTag.type = 'text/javascript';
-
-                const appendSignTag = () => { head.appendChild(signTag); };
-                const appendScriptTag = () => { head.appendChild(scriptTag); };
-
-
-                // function injectJsTags(func, callback) {
-                //     func();
-                //     callback();
-                // }
-
-                // injectJsTags(appendSignTag, appendScriptTag);
-
-                const a = async () => {
-                    return new Promise((resolve) => {
-                        appendSignTag();
-                        // console.log("sign");
-                        resolve();
-                    });
-                }
-
-                const b = async () => {
-                    return new Promise((resolve) => {
-                        appendScriptTag();
-                        // console.log("script");
-                        resolve();
-                    });
-                }
-
-                a()
-                    .then(b)
-                    .then(() => {
-                        // console.log("Page Rendered")
-                    })
-            } catch (err) {
-                console.log(err, 2);
-            }
-        });
-
+        const urlParams = new URLSearchParams(window.location.search);
+        const queryParamZodiacSign = urlParams.get('sign');
+        const queryParamUserName = urlParams.get('user');
     </script>
+
+    <script src="./zodiac.js"></script>
+
+    <script src="./script.js"></script>
 
 </body>
 

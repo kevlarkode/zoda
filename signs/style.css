@@ -295,6 +295,7 @@ main {
   font-size: 2.75rem;
   letter-spacing: 3px;
   color: white;
+  color: var(--theme-color-4);
 }
 
 .sub-heading {
@@ -377,24 +378,94 @@ main {
 
 #hero-image {
   width: 300px;
-  filter: drop-shadow(1px 1px 10px var(--theme-color-4));
-  /* animation: 3s glow linear infinite; */
+  filter: drop-shadow(1px 1px 20px var(--theme-color-4));
 }
 
-@keyframes glow {
-  0% {
-    filter: drop-shadow(1px 1px 20px hsla(33, 100%, 50%, 0.75));
+.error-div-wrapper {
+  padding: 2rem;
+}
+
+.error-div {
+  max-width: 925px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #141414;
+  box-shadow: 1px 1px 25px 3px #000;
+  border: 2px solid hsl(350, 45%, 49%);
+  border-radius: 0.5rem;
+  max-width: 925px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh;
+}
+
+.error-div h2 {
+  padding: 1rem;
+  font-size: 3.5rem;
+  color: hsl(350, 97%, 75%);
+  text-align: center;
+}
+
+.error-div p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  color: hsl(349, 100%, 90%);
+  max-width: 80%;
+}
+
+.error-div .btn-div {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+#reload {
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  background-color: hsl(200, 60%, 32%);
+  color: white;
+  color: #eee;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: 3px solid white;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+#go-home {
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  background-color: hsl(120, 60%, 32%);
+  color: #eee;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: 3px solid white;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 750px) {
+  .btn-div {
+    flex-direction: column;
   }
-  25% {
-    filter: drop-shadow(1px 1px 15px hsla(39, 100%, 50%, 0.75));
-  }
-  50% {
-    filter: drop-shadow(1px 1px 10px hsla(45, 100%, 50%, 0.75));
-  }
-  75% {
-    filter: drop-shadow(1px 1px 15px hsla(39, 100%, 50%, 0.75));
-  }
-  100% {
-    filter: drop-shadow(1px 1px 20px hsla(33, 100%, 50%, 0.75));
-  }
+}
+
+.username-subheading {
+  color: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2.5rem;
+  padding-top: 3rem;
+}
+
+#user-name {
+  color: hsl(46, 91%, 40%);
 }

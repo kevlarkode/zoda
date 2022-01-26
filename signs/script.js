@@ -1,6 +1,10 @@
 const renderTemplate = () => {
     try {
+        const info = eval(queryParamZodiacSign);
         let template = `
+
+    <h3 class="username-subheading"><span id="user-name">${queryParamUserName}</span>, Your zodiac sign is </h3>
+
      <h2 class="sign">${info.Zodiac}</h2>
 
         <div class="hero">
@@ -87,7 +91,7 @@ const renderTemplate = () => {
                         <span>${info.CompatibleSigns.one.Zodiac}</span>
                     </div>
                     <div class="card-content">
-                        <img src="/assets/img/card-icons/${info.CompatibleSigns.one.Sign}.png" alt="1" style="max-width:  125px;" class="card-image">
+                        <img src="/assets/img/card-icons/${info.CompatibleSigns.one.Sign}.png" alt="1" style="max-width:  125px; max-height: 125px" class="card-image">
                     </div>
                     <div class="card-footer">
                         <span>Dates :</span></span>
@@ -99,7 +103,7 @@ const renderTemplate = () => {
                         <span>${info.CompatibleSigns.two.Zodiac}</span>
                     </div>
                     <div class="card-content">
-                        <img src="/assets/img/card-icons/${info.CompatibleSigns.two.Sign}.png" alt="1" style="max-width:  125px;" class="card-image">
+                        <img src="/assets/img/card-icons/${info.CompatibleSigns.two.Sign}.png" alt="1" style="max-width:  125px; max-height: 125px" class="card-image">
                     </div>
                     <div class="card-footer">
                         <span>Dates :</span></span>
@@ -111,7 +115,7 @@ const renderTemplate = () => {
                         <span>${info.CompatibleSigns.three.Zodiac}</span>
                     </div>
                     <div class="card-content">
-                        <img src="/assets/img/card-icons/${info.CompatibleSigns.three.Sign}.png" alt="1" style="max-width:  125px;" class="card-image">
+                        <img src="/assets/img/card-icons/${info.CompatibleSigns.three.Sign}.png" alt="1" style="max-width:  125px; max-height: 125px" class="card-image">
                     </div>
                     <div class="card-footer">
                         <span>Dates :</span></span>
@@ -157,22 +161,44 @@ const renderTemplate = () => {
             })
         });
 
+        const userNameSubHeading = document.querySelector(".username-subheading");
+
+        if (queryParamUserName === null)
+        {
+            userNameSubHeading.style.display = "none";
+        }
+
     } catch (err) {
 
-        // const template = `
-        // <div class="error-div">
-        //     <h2>Loading Error!</h2>
-        //     <p>Either the url query paramters are misspelt or this is a loading error.</p>
+        const fallBackTemplate = `
+        <div class="error-div-wrapper">
+            <div class="error-div">
+                <h2>Loading Error!</h2>
+                <p>Either the url query paramters are misspelt or this is a loading error.</p>
 
-        //     <div class="btn-div">
-        //         <a href=${window.location}>Reload</a>
-        //         <button onclick="window.location.replace="/">Go Home</button>
-        //     </div>
-        // </div>
-        // `;
+                <div class="btn-div">
+                    <button id="reload">Reload</button>
+                    <button id="go-home">Go Home</button>
+                </div>
+            </div>
+        </div>
+        `;
 
-        // const main = document.querySelector("main");
-        // main.innerHTML = template;
+        const main = document.querySelector("main");
+        main.innerHTML = fallBackTemplate;
+
+        const reload = document.querySelector("#reload");
+        const goHome = document.querySelector("#go-home");
+
+        reload.addEventListener("click", () => {
+            window.location.href = window.location;
+            console.log(window.location)
+        });
+
+        goHome.addEventListener("click", () => {
+            window.location.replace("/");
+        });
+
         console.log(err.message, 2);
     }
 }
