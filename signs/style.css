@@ -68,14 +68,14 @@
 }
 
 /* text selection color */
-::-moz-selection {
+/* ::-moz-selection {
   background: hsla(0, 100%, 74%, 0.75);
   color: #fff;
 }
 ::selection {
   background: hsla(0, 100%, 74%, 0.75);
   color: #fff;
-}
+} */
 
 body {
   background-color: hsl(252, 43%, 24%);

@@ -127,24 +127,29 @@ const renderTemplate = () => {
 `;
 
         // changing css variables as per zodiac sign element
-        const r = document.querySelector(':root');
+        const r = document.querySelector(":root");
+        const selectionTextColor = document.querySelector("#selection-text-color");
 
         // const rs = getComputedStyle(r);
-        // const themeColor1 = rs.getPropertyValue('--theme-color-1');
-        // const themeColor4 = rs.getPropertyValue('--theme-color-4');
+        // const themeColor1 = rs.getPropertyValue("--theme-color-1");
+        // const themeColor4 = rs.getPropertyValue("--theme-color-4");
 
         if (info.Element === "Air") {
-            r.style.setProperty('--theme-color-1', 'hsl(57, 44%, 42%)');
-            r.style.setProperty('--theme-color-4', 'hsl(57, 100%, 42%)');
+            r.style.setProperty("--theme-color-1", "hsl(57, 44%, 42%)");
+            r.style.setProperty("--theme-color-4", "hsl(57, 100%, 42%)");
+            selectionTextColor.href = "./css/text-selection-yellow.css";
         } else if (info.Element === "Water") {
-            r.style.setProperty('--theme-color-1', 'hsl(200, 70%, 47%)');
-            r.style.setProperty('--theme-color-4', 'hsl(200, 100%, 47%)');
+            r.style.setProperty("--theme-color-1", "hsl(200, 70%, 47%)");
+            r.style.setProperty("--theme-color-4", "hsl(200, 100%, 47%)");
+            selectionTextColor.href = "./css/text-selection-blue.css";
         } else if (info.Element === "Fire") {
-            r.style.setProperty('--theme-color-1', 'hsl(0, 75%, 66%)');
-            r.style.setProperty('--theme-color-4', 'hsl(0, 100%, 74%)');
+            r.style.setProperty("--theme-color-1", "hsl(0, 75%, 66%)");
+            r.style.setProperty("--theme-color-4", "hsl(0, 100%, 74%)");
+            selectionTextColor.href ="./css/text-selection-red.css";
         } else if (info.Element === "Earth") {
-            r.style.setProperty('--theme-color-1', 'hsl(120, 40%, 52%)');
-            r.style.setProperty('--theme-color-4', 'hsl(120, 70%, 52%)');
+            r.style.setProperty("--theme-color-1", "hsl(120, 40%, 52%)");
+            r.style.setProperty("--theme-color-4", "hsl(120, 70%, 52%)");
+            selectionTextColor.href = "./css/text-selection-green.css";
         }
 
         const main = document.querySelector("main");

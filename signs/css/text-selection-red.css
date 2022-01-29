@@ -1,0 +1,8 @@
+::-moz-selection {
+  background: hsla(0, 100%, 74%, 0.75);
+  color: #fff;
+}
+::selection {
+  background: hsla(0, 100%, 74%, 0.75);
+  color: #fff;
+}

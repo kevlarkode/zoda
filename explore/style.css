@@ -25,6 +25,16 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* text selection color */
+::-moz-selection {
+  background: hsla(253, 62%, 63%, 0.75);
+  color: #fff;
+}
+::selection {
+  background: hsla(253, 62%, 63%, 0.75);
+  color: #fff;
+}
+
 body {
   background-color: hsl(252, 43%, 24%);
   font-family: sans-serif;
