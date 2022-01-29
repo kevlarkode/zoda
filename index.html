@@ -13,151 +13,216 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/hero.css">
 
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
+
 </head>
 
 <body>
 
-    <!-- <div class="container"> -->
+    <!-- header -->
+    <header>
 
-        <!-- header -->
-        <header>
+        <!-- logo -->
+        <a class="logo" href="/" class="logo">
+            <h1>
+                Zoda
+            </h1>
+        </a>
 
-            <!-- logo -->
-            <a class="logo" href="/" class="logo">
-                <h1>
-                    Zoda
-                </h1>
-            </a>
+        <p>Know your Zodiac!</p>
 
-            <p>Know your Zodiac!</p>
+    </header>
 
-        </header>
+    <!-- Desktop Navigation -->
+    <nav class="navigation-large-screen">
 
-        <!-- Desktop Navigation -->
-        <nav class="navigation-large-screen">
+        <div class="container-small">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/explore/">Explore</a>
+                </li>
+                <li>
+                    <a href="/people/">People</a>
+                </li>
+            </ul>
+        </div>
 
-            <div class="container-small">
-                <ul>
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/explore/" >Explore</a>
-                    </li>
-                    <li>
-                        <a href="/people/" >People</a>
-                    </li>
-                </ul>
+    </nav>
+
+    <main>
+
+        <section class="content">
+
+            <!-- svg -->
+
+            <div class="hero">
+                <div class="hero-container">
+                    <ul class="circle-container rotation">
+                        <li class="small-circle"><img src="/assets/img/icons-3/aries.png" alt="1" width="75">
+                        </li>
+                        <li class="small-circle"><img src="/assets/img/icons-3/taurus.png" alt="2" width="75">
+                        </li>
+                        <li class="small-circle"><img src="/assets/img/icons-3/gemini.png" alt="3" width="75">
+                        </li>
+                        <li class="small-circle"><img src="/assets/img/icons-3/cancer.png" alt="4" width="75">
+                        </li>
+                        <li class="small-circle"><img src="/assets/img/icons-3/leo.png" alt="5" width="75"></li>
+                        <li class="small-circle"><img src="/assets/img/icons-3/virgo.png" alt="6" width="75">
+                        </li>
+                        <li class="small-circle"><img src="/assets/img/icons-3/libra.png" alt="7" width="75">
+                        </li>
+                        <li class="small-circle"><img src="/assets/img/icons-3/scorpio.png" alt="8" width="75">
+                        </li>
+                        <li class="small-circle"><img src="/assets/img/icons-3/sagittarius.png" alt="9" width="75">
+                        </li>
+                        <li class="small-circle"><img src="/assets/img/icons-3/capricorn.png" alt="10" width="75">
+                        </li>
+                        <li class="small-circle"><img src="/assets/img/icons-3/aquarius.png" alt="11" width="75">
+                        </li>
+                        <li class="small-circle"><img src="/assets/img/icons-3/pisces.png" alt="12" width="75">
+                        </li>
+                        <li class="small-circle"><img src="/assets/img/zoda-logo.png" alt="0" width="125">
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-        </nav>
 
-        <main>
+            <!-- input details -->
+            <div action="" class="input-details">
 
-            <section class="content">
+                <h3>Enter your name and birthday:</h3>
 
-                <!-- svg -->
+                <div class="input-div">
+                    <div>
+                        <!-- <label for="month">Your Name:</label> -->
+                        <input type="text" name="name" id="name" placeholder="Enter your name...">
+                    </div>
 
-                <div class="hero">
-                    <div class="hero-container">
-                        <ul class="circle-container rotation">
-                            <li class="small-circle"><img src="/assets/img/icons-3/aries.png" alt="1" width="75">
-                            </li>
-                            <li class="small-circle"><img src="/assets/img/icons-3/taurus.png" alt="2" width="75">
-                            </li>
-                            <li class="small-circle"><img src="/assets/img/icons-3/gemini.png" alt="3" width="75">
-                            </li>
-                            <li class="small-circle"><img src="/assets/img/icons-3/cancer.png" alt="4" width="75">
-                            </li>
-                            <li class="small-circle"><img src="/assets/img/icons-3/leo.png" alt="5" width="75"></li>
-                            <li class="small-circle"><img src="/assets/img/icons-3/virgo.png" alt="6" width="75">
-                            </li>
-                            <li class="small-circle"><img src="/assets/img/icons-3/libra.png" alt="7" width="75">
-                            </li>
-                            <li class="small-circle"><img src="/assets/img/icons-3/scorpio.png" alt="8" width="75">
-                            </li>
-                            <li class="small-circle"><img src="/assets/img/icons-3/sagittarius.png" alt="9"
-                                    width="75">
-                            </li>
-                            <li class="small-circle"><img src="/assets/img/icons-3/capricorn.png" alt="10"
-                                    width="75">
-                            </li>
-                            <li class="small-circle"><img src="/assets/img/icons-3/aquarius.png" alt="11"
-                                    width="75">
-                            </li>
-                            <li class="small-circle"><img src="/assets/img/icons-3/pisces.png" alt="12" width="75">
-                            </li>
-                            <li class="small-circle"><img src="/assets/img/zoda-logo.png" alt="0" width="125">
-                            </li>
-                        </ul>
+                    <!-- <div>
+                        <label for="month">Your Birthday:</label>
+                        <input type="date" name="date" id="date" value="2001-01-01">
+                    </div> -->
+
+                    <div class="date-div">
+                        <button class="date-selected">
+                            <span id="date">Select Date</span>
+                            <span class="select-date-drop-down">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" width="24" height="24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                        </button>
+
+                        <div class="date-select-div">
+                            <div class="date-option-row">
+                                <button class="date-option" data-date="01">01</button>
+                                <button class="date-option" data-date="02">02</button>
+                                <button class="date-option" data-date="03">03</button>
+                                <button class="date-option" data-date="04">04</button>
+                                <button class="date-option" data-date="05">05</button>
+                            </div>
+                            <div class="date-option-row">
+                                <button class="date-option" data-date="06">06</button>
+                                <button class="date-option" data-date="07">07</button>
+                                <button class="date-option" data-date="08">08</button>
+                                <button class="date-option" data-date="09">09</button>
+                                <button class="date-option" data-date="10">10</button>
+                            </div>
+                            <div class="date-option-row">
+                                <button class="date-option" data-date="11">11</button>
+                                <button class="date-option" data-date="12">12</button>
+                                <button class="date-option" data-date="13">13</button>
+                                <button class="date-option" data-date="14">14</button>
+                                <button class="date-option" data-date="15">15</button>
+                            </div>
+                            <div class="date-option-row">
+                                <button class="date-option" data-date="16">16</button>
+                                <button class="date-option" data-date="17">17</button>
+                                <button class="date-option" data-date="18">18</button>
+                                <button class="date-option" data-date="19">19</button>
+                                <button class="date-option" data-date="20">20</button>
+                            </div>
+                            <div class="date-option-row">
+                                <button class="date-option" data-date="21">21</button>
+                                <button class="date-option" data-date="22">22</button>
+                                <button class="date-option" data-date="23">23</button>
+                                <button class="date-option" data-date="24">24</button>
+                                <button class="date-option" data-date="25">25</button>
+                            </div>
+                            <div class="date-option-row">
+                                <button class="date-option" data-date="26">26</button>
+                                <button class="date-option" data-date="27">27</button>
+                                <button class="date-option" data-date="28">28</button>
+                                <button class="date-option" data-date="29">29</button>
+                                <button class="date-option" data-date="30">30</button>
+                            </div>
+                            <div class="date-option-row">
+                                <button class="date-option" data-date="31">31</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="month-div">
+                        <button class="month-selected">
+                            <span id="month">Select Month</span>
+                            <span class="select-month-drop-down">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" width="24" height="24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="month-select-div">
+                            <div class="month-option-row">
+                                <button class="month-option" data-month="January">JAN</button>
+                                <button class="month-option" data-month="February">FEB</button>
+                                <button class="month-option" data-month="March">MAR</button>
+                                <button class="month-option" data-month="April">APR</button>
+                            </div>
+                            <div class="month-option-row">
+                                <button class="month-option" data-month="May">MAY</button>
+                                <button class="month-option" data-month="June">JUN</button>
+                                <button class="month-option" data-month="July">JUL</button>
+                                <button class="month-option" data-month="August">AUG</button>
+                            </div>
+                            <div class="month-option-row">
+                                <button class="month-option" data-month="September">SEP</button>
+                                <button class="month-option" data-month="October">OCT</button>
+                                <button class="month-option" data-month="November">NOV</button>
+                                <button class="month-option" data-month="December">DEC</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <button id="submit">Let's Go</button>
 
-                <!-- input details -->
-                <div action="" class="input-details">
+            </div>
 
-                    <h3>Enter your name and birthday:</h3>
+        </section>
 
-                    <div class="input-div">
-                        <div>
-                            <label for="month">Your Name:</label>
-                            <input type="text" name="name" id="name" placeholder="Enter your name...">
-                        </div>
+    </main>
 
-                        <div>
-                            <label for="month">Your  Birthday:</label>
-                            <input type="date" name="date" id="date" value="2001-01-01">
-                        </div>
-                    </div>
+    <footer id="footer">
 
-                    <button id="submit">Let's Go</button>
+        <a href="/" class="link">
+            <h1>
+                Zoda
+            </h1>
+        </a>
+        <p class="para text-center">© <span id="year"></span> Zoda | All rights reserved.</p>
 
-                </div>
-
-            </section>
-
-        </main>
-
-        <footer id="footer">
-
-            <a href="/" class="link">
-                <h1>
-                    Zoda
-                </h1>
-            </a>
-            <p class="para text-center">© <span id="year"></span> Zoda | All rights reserved.</p>
-
-        </footer>
-
-        <script>
-            document.querySelector('#year').innerHTML = new Date().getFullYear();
-        </script>
-
-    <!-- </div> -->
+    </footer>
 
     <script>
-
-        // option for disabling animation in mobile
-
-        const isMobile = navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i);
-
-        const diableAnimateForMobile = () => {
-            if (isMobile) {
-                const circleContainer = document.querySelector('.circle-container');
-                const smallCircles = document.querySelectorAll('.small-circle');
-
-                circleContainer.classList.toggle('rotation');
-
-
-                smallCircles.forEach(elem => {
-                    elem.style.animation = 'none';
-                });
-            }
-        }
-
-        diableAnimateForMobile();
-
+        document.querySelector('#year').innerHTML = new Date().getFullYear();
     </script>
 
     <script src="./assets/js/scipt.js"></script>
