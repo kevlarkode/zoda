@@ -4,7 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <meta property="og:image" itemprop="image" content="/assets/img/logo.png">
+    <meta property="og:updated_time" content="1440432930" />
+    <meta name="msapplication-TileImage" content="/assets/img/logo.png">
+    <meta property="og:site_name" content="Zoda">
+    <meta property="og:title" content="Zoda">
+    <meta property="og:description" content="Zodiac predictor app">
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:url" content="https://zoda.netlify.app/">
+    <!-- <meta property="og:url" content="https://zoda.netlify.app/"> -->
+
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/assets/img/logo.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#000000">
+    <meta name="theme-color" content="#000000">
 
     <title>Zoda | Home</title>
 
@@ -15,9 +35,68 @@
 
     <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
 
+    <style>
+        .install-btn-container {
+            display: none;
+        }
+
+        #install {
+            font-size: 1.5rem;
+            border: 0.25rem solid white;
+            box-shadow: 1px 1px 10px 5px hsla(0, 0%, 0%, 0.125);
+            border-radius: 50%;
+            padding: 1rem;
+            transition: 0.3s;
+            background-color: rgb(54, 153, 51);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: fit-content;
+            text-decoration: none;
+            font-family: Calibri, sans-serif;
+            transition: 0.3s ease-in;
+            cursor: pointer;
+            max-width: 3rem;
+            max-height: 3rem;
+            position: absolute;
+            right: 0;
+            margin-top: 0.5rem;
+            margin-right: 0.5rem;
+        }
+
+        @media screen and (max-width: 800px) {
+            #install {
+                max-width: 2.5rem;
+                max-height: 2.5rem;
+            }
+        }
+
+        #install:active {
+            box-shadow: inset 1px 1px 10px 5px hsla(0, 0%, 0%, 0.25),
+                1px 1px 10px 5px hsla(0, 0%, 0%, 0.125);
+        }
+
+        #install svg {
+            width: 2em;
+        }
+    </style>
+
 </head>
 
 <body>
+
+    <div class="install-btn-container">
+        <a href="javascript:void(0);" id="install">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" style="max-width: 10rem;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
+            </svg>
+        </a>
+    </div>
+
 
     <!-- header -->
     <header>
@@ -220,6 +299,9 @@
     </script>
 
     <script src="./assets/js/scipt.js"></script>
+
+    <script src="/assets/js/swregis.js"></script>
+    <script src="/assets/js/sw.js"></script>
 
 </body>
 
