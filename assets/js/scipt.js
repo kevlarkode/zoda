@@ -165,7 +165,6 @@ const handleSubmitEvent = (name, date, month) => {
 
     if (sign.length > 0) {
         sign = sign.toLowerCase();
-        console.log(name, sign);
 
         userName.value = "";
 

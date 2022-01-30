@@ -5,10 +5,425 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>404 | Page Not Found</title>
+
+    <style>
+        /* Fonts */
+        /* Montserrat */
+        @font-face {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+                U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+                U+FEFF, U+FFFD;
+        }
+
+        :root {
+            --glass: hsla(0, 0%, 100%, 0.1);
+            --glass-2: hsla(0, 0%, 100%, 0.2);
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* text selection color */
+        ::-moz-selection {
+            background: hsla(100, 62%, 63%, 0.75);
+            color: #fff;
+        }
+
+        ::selection {
+            background: hsla(100, 62%, 63%, 0.75);
+            color: #fff;
+        }
+
+        body {
+            background-color: hsl(100, 43%, 24%);
+            font-family: sans-serif;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .container-small {
+            max-width: 925px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: hsl(70, 100%, 32%);
+        }
+
+        header p {
+            text-align: center;
+            padding-bottom: 0.75rem;
+            font-weight: bold;
+            color: #eee;
+            letter-spacing: 2.5px;
+            word-spacing: 3px;
+        }
+
+        .logo {
+            text-decoration: none;
+            padding: 0.5rem 1rem 0rem 1rem;
+            font-size: 1.5rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: fit-content;
+            margin: 0 auto;
+            letter-spacing: 5px;
+        }
+
+        .logo h1 {
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
+            font-family: "Montserrat", sans-serif;
+        }
+
+        nav {
+            background-color: hsl(100, 43%, 18%);
+        }
+
+        .navigation-large-screen ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1.5rem;
+            background-color: hsl(100, 43%, 18%);
+        }
+
+        .navigation-large-screen ul li {
+            list-style: none;
+            padding: 0.25rem;
+        }
+
+        .navigation-large-screen ul li a {
+            text-decoration: none;
+            padding: 0.75rem 1.25rem;
+            background-color: var(--zoda-theme);
+            background-color: hsl(350, 45%, 49%);
+            color: hsl(350, 83%, 9%);
+            color: white;
+            font-weight: bold;
+            border-radius: 0.5rem;
+            border: 1.5px solid hsl(350, 68%, 28%);
+        }
+
+        .navigation-large-screen ul li a:hover,
+        .navigation-large-screen ul li a:active {
+            background-color: hsl(350, 70%, 55%);
+            border: 1.5px solid white;
+            transition: 0.3s ease-in;
+            color: white;
+        }
+
+        footer {
+            background-color: hsl(70, 100%, 32%);
+            color: #eee;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer p {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        footer .link {
+            color: #eee;
+            text-decoration: none;
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: 1.5px;
+        }
+
+        main {
+            min-height: 70vh;
+        }
+
+        .cards-div {
+            padding: 1rem;
+            color: #fff;
+        }
+
+        .cards-div h2 {
+            text-align: center;
+            margin: 1rem 0;
+            font-size: 2.5rem;
+            color: white;
+            text-shadow: 2px 2px #ff0000;
+        }
+
+        .cards-div .info {
+            text-align: center;
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            color: hsl(0, 0%, 100%);
+            color: hsl(76, 100%, 48%);
+            line-height: 40px;
+        }
+
+        .cards-div .info span {
+            color: hsl(76, 100%, 48%);
+            font-size: 1.5rem;
+        }
+
+        @media screen and (max-width: 800px) {
+            .cards-div h2 {
+                font-size: 1.75rem;
+            }
+        }
+
+        .three-items {
+            width: 30% !important;
+        }
+
+        .card-flex {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .card {
+            background-color: var(--glass);
+            box-shadow: 1px 1px 20px 3px rgba(255, 255, 255, 0.555), 3px 3px 10px #ff0000;
+            width: fit-content;
+            border-radius: 0.5rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 0.25rem solid #fff;
+            margin: 1.25rem 0;
+
+            width: 30%;
+
+            cursor: pointer;
+        }
+
+        .card span {
+            text-shadow: 2px 2px #ff0000;
+        }
+
+        .card-header {
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 1rem 0;
+            width: 100%;
+            background-color: var(--glass-2);
+            border-radius: 0.5rem 0.5rem 0 0;
+            text-align: center;
+            text-shadow: 1px 1px #ff0000;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            margin: 1rem;
+            filter: drop-shadow(2px 2px 3px #ff0000);
+        }
+
+        .card-footer {
+            width: 100%;
+            background-color: var(--glass-2);
+            border-radius: 0 0 0.5rem 0.5rem;
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-shadow: 2px 2px #ff0000;
+        }
+
+        .card-footer span {
+            padding-top: 1rem;
+            display: flex;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .card-footer p {
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 750px) {
+            .card {
+                width: 95%;
+            }
+        }
+
+        .btn-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        #go-home {
+            padding: 0.75rem 1.2rem;
+            background-color: hsl(135, 100%, 30%);
+            color: #fff;
+            border: 3px solid #fff;
+            border-radius: 2rem;
+            margin-left: 1rem;
+            box-shadow: 1px 1px 10px hsla(0, 0%, 100%, 0.5);
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        #learn-more {
+            padding: 0.75rem 1.2rem;
+            background-color: hsl(197, 100%, 32%);
+            color: #fff;
+            border: 3px solid #fff;
+            border-radius: 2rem;
+            margin-right: 1rem;
+            box-shadow: 1px 1px 10px hsla(0, 0%, 100%, 0.5);
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: 800px) {
+            .btn-div {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #go-home,
+            #lear-nmore {
+                margin: 1rem 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
+
+    <!-- header -->
+    <header>
+
+        <!-- logo -->
+        <a class="logo" href="/" class="logo">
+            <h1>
+                Zoda
+            </h1>
+        </a>
+
+        <p>Know your Zodiac!</p>
+
+    </header>
+
+    <!-- Desktop Navigation -->
+    <nav class="navigation-large-screen">
+
+        <div class="container-small">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/explore/">Explore</a>
+                </li>
+                <li>
+                    <a href="/people/">People</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <section class="content">
+
+            <div class="cards-div">
+                <h2>Seems like you got lost!</h2>
+                <p class="info">But wait, you found the <br><span>13th Sign of Zodiac.</span></p>
+                <div class="card-flex container-small">
+                    <div class="card" data-sign="ophiuchus">
+                        <div class="card-header">
+                            <span>Ophiuchus</span>
+                            <p style="font-size: 1rem;">(pronoucned: o-few-cus)</p>
+                        </div>
+                        <div class="card-content">
+                            <img src="/assets/img/card-icons/ophiuchus.png" alt="1"
+                                style="max-width: 125px; max-height: 125px;" class="card-image">
+                        </div>
+                        <div class="card-footer">
+                            <span>Dates:</span>
+                            <p>Nov 29 - Dec 17</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-div">
+                <button id="learn-more">What's Ophiuchus?</button>
+                <button id="go-home">Go to Home</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+
+        <a href="/" class="link">
+            <h1>
+                Zoda
+            </h1>
+        </a>
+        <p class="para text-center">© <span id="year"></span> Zoda | All rights reserved.</p>
+
+    </footer>
+
+    <script>
+        document.querySelector('#year').innerHTML = new Date().getFullYear();
+    </script>
+
+    <script>
+
+        const card = document.querySelector(".card");
+        const zodiacSign = card.getAttribute("data-sign");
+        const learnMore = document.querySelector("#learn-more");
+        const goHome = document.querySelector("#go-home");
+
+        card.addEventListener("click", () => {
+            window.location.href = `/signs/index.html?sign=${zodiacSign}`;
+        });
+
+        learnMore.addEventListener("click", () => {
+            window.location.href = `/signs/index.html?sign=${zodiacSign}`;
+        });
+
+        goHome.addEventListener("click", () => {
+            window.location.replace("/");
+        });
+
+    </script>
 
 </body>
 

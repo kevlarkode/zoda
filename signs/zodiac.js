@@ -15,7 +15,7 @@ const aries = {
         likes: "Comfortable clothes, taking on leadership roles, physical challenges, individual sports",
         dislikes: "Inactivity, delays, work that does not use one's talents"
     },
-    Brief:
+    Personality:
         "As the first sign in the zodiac, the presence of Aries always marks the beginning of something energetic and turbulent.They are continuously looking for dynamic, speed and competition, always being the first in everything - from work to social gatherings.Thanks to its ruling planet Mars and the fact it belongs to the element of Fire(just like Leo and Sagittarius), Aries is one of the most active zodiac signs.It is in their nature to take action, sometimes before they think about it.",
     AttractMan:
         "Independence is the key to understanding an Aries, for they don't like to take orders from others. In order to seduce an Aries man, you need to learn to play the game by his rules. This man often finds the chase for the subject of his desire more thrilling than the catch, and his conquering nature makes him often chase after partners he can't have.To get his attention, one must play hard to get, as if sending a message that he needs to fight for a prize, and winning the one he truly wants to be with.",
@@ -63,7 +63,7 @@ const taurus = {
         likes: "Gardening, cooking, music, romance, high quality clothes, working with hands",
         dislikes: "Sudden changes, complications, insecurity of any kind, synthetic fabrics"
     },
-    Brief:
+    Personality:
         "Practical and well-grounded, Taurus is the sign that harvests the fruits of labor. They feel the need to always be surrounded by love and beauty, turned to the material world, hedonism, and physical pleasures. People born with their Sun in Taurus are sensual and tactile, considering touch and taste the most important of all senses. Stable and conservative, this is one of the most reliable signs of the zodiac, ready to endure and stick to their choices until they reach the point of personal satisfaction.",
     AttractMan:
         "If you are in search for a strong, loyal and generous man, Taurus is the person you are looking for. He is trustworthy, patient and tender when in love, always in search for a returned emotion. He will not pick on subtle hinds and suggestive looks from those who flirt with him, being a bit slow on the uptake as if waiting for someone to ask them out. He dislikes artificiality of any kind, and values conversations filled with genuine statements, especially when it comes to compliments and love declarations.",
@@ -110,7 +110,7 @@ const gemini = {
         likes: "Music, books, magazines, chats with nearly anyone, short trips around the town",
         dislikes: "Being alone, being confined, repetition and routine"
     },
-    Brief:
+    Personality:
         "Expressive and quick-witted, Gemini represents two different personalities in one and you will never be sure which one you will face. They are sociable, communicative and ready for fun, with a tendency to suddenly get serious, thoughtful and restless. They are fascinated with the world itself, extremely curious, with a constant feeling that there is not enough time to experience everything they want to see.",
     AttractMan:
         "A Gemini man is enthusiastic and full of life, never disappointing with dull moments. He is adventurous and humorous, and this makes him the perfect partner if a person is energetic and dynamic, in search for some laughter and fun. Gemini men are naturally chatty and flirtatious, and you can meet them at public gatherings, conferences, and traffic jams. Their personality is marked by dualism, making them inconsistent but clever, and amazingly attractive to others. This man is impossible to cling to, and need a partner who gives him enough freedom and space, followed by mental stimulation and variety. To win his heart, one has to be fun, stimulating, adventurous, laughing at his jokes and ready to learn from him day after day. As if opposed to his eloquent nature, this isn't a man ready to discuss emotions that much, and will prefer if they are shown rather than spoken of.",
@@ -157,7 +157,7 @@ const cancer = {
         likes: "Art, home-based hobbies, relaxing near or in water, helping loved ones, a good meal with friends",
         dislikes: "Strangers, any criticism of Mom, revealing of personal life"
     },
-    Brief:
+    Personality:
         "Deeply intuitive and sentimental, Cancer can be one of the most challenging zodiac signs to get to know. They are very emotional and sensitive, and care deeply about matters of the family and their home. Cancer is sympathetic and attached to people they keep close. Those born with their Sun in Cancer are very loyal and able to empathize with other people's pain and suffering.",
     AttractMan:
         "A Cancer man is conservative just enough to know that initiative is important, but often fails to show it before he feels safe to do so. His partners need to make the first move, but still doing it subtly to let him still feel like he is leading the way. This is a complex individual, very sensitive, shy and overly protective of his loved ones. When he prefers women, he will subconsciously search for the ideal wife and mother.",
@@ -203,7 +203,7 @@ const leo = {
         likes: "Theater, taking holidays, being admired, expensive things, bright colors, fun with friends",
         dislikes: "Being ignored, facing difficult reality, not being treated like a king or queen"
     },
-    Brief:
+    Personality:
         "People born under the sign of Leo are natural born leaders. They are dramatic, creative, self-confident, dominant and extremely difficult to resist, able to achieve anything they want to in any area of life they commit to. There is a specific strength to a Leo and their &#34;king of the jungle&#34; status. Leo often has many friends for they are generous and loyal. Self-confident and attractive, this is a Sun sign capable of uniting different groups of people and leading them as one towards a shared cause, and their healthy sense of humor makes collaboration with other people even easier.",
     AttractMan:
         "A Leo man wants to be treated like a king in their intimate relationship and this is not their narcissistic characteristic, but a true inner need that all people with deep self-respect have to feel. Plans with him are always big and dramatic, and showering with admiration, devotion and attention come really natural both ways. This is a man who gives many gifts when they are in love, often expensive and posing as a statement of his effort. Any partner that wants to stay with him has to prove that they are worthy of royal treatment and ready to give enough of it back. A Leo man will love compliments, and although he appears confident, he needs a lot of praise to start feeling safe around their loved one too.",
@@ -249,7 +249,7 @@ const virgo = {
         likes: "Animals, healthy food, books, nature, cleanliness",
         dislikes: "Rudeness, asking for help, taking center stage"
     },
-    Brief:
+    Personality:
         "Virgos are always paying attention to the smallest details and their deep sense of humanity makes them one of the most careful signs of the zodiac. Their methodical approach to life ensures that nothing is left to chance, and although they are often tender, their heart might be closed for the outer world. This is a sign often misunderstood, not because they lack the ability to express, but because they won't accept their feelings as valid, true, or even relevant when opposed to reason. The symbolism behind the name speaks well of their nature, born with a feeling they are experiencing everything for the first time.",
     AttractMan:
         "To seduce a Virgo man, one must respect his need for cleanliness and order. In most cases he enters romance slowly, carefully, and likes to take his time getting to know a person before starting anything serious. When he receives information on what to expect, his partner has to be sure to deliver nothing less. A Virgo man might put up a cool front, but don't let him fool you. He has deep and sensual needs, and only if his partner is patient enough, able to withstand his tendency to overanalyze everything, he will eventually warm up.",
@@ -296,7 +296,7 @@ const libra = {
         likes: "Harmony, gentleness, sharing with others, the outdoors",
         dislikes: "Violence, injustice, loudmouths, conformity"
     },
-    Brief:
+    Personality:
         "People born under the sign of Libra are peaceful, fair, and they hate being alone. Partnership is very important for them, seeking someone with the ability to be the mirror to themselves. These individuals are fascinated by balance and symmetry, they are in a constant chase for justice and equality, realizing through life that the only thing that should be truly important to themselves in their own inner core of personality. This is someone ready to do nearly anything to avoid conflict, keeping the peace whenever possible.",
     AttractMan:
         "Libra men appreciate all that is beautiful and search for a partner to inspire them with their appearance. This might sound superficial, but the fact is they need mental and visual stimuli to make decision processes easier and push them into a serious relationship to begin with. Once they have decided to be with someone, they usually make serious, long-term bonds, enduring with ease through the hard times knowing they have already made the perfect choice to begin with. A Libra man wants to discuss everything with his partner, from daily matters to big shared endeavors in life.",
@@ -342,7 +342,7 @@ const scorpio = {
         likes: "Truth, facts, being right, talents, teasing, passion",
         dislikes: "Dishonesty, revealing secrets, superficiality, small talk"
     },
-    Brief:
+    Personality:
         "Scorpios are passionate and assertive people with determination and focus you rarely see in other zodiac signs. They will turn to in-depth research to reach the truth behind anything they find important. Great leaders and guides, Scorpios are resourceful, dedicated and fearless when there is challenge to be overcome. They will hold on to other people's secrets, even when they aren't very fond of them to begin with and do anything they can for those they tie themselves to.",
     AttractMan:
         "Scorpio men are tedious, confident, intense, sexual and very competitive. They can be highly obsessive, compulsive and jealous, and this is colored by blind dedication and all-giving love every one of us craves for. He needs a practical person to help him stick to his plans while at the same time surrounded by a bubble of mystery, intriguing and quiet enough. He enjoys the game of seduction and needs to feel surprised, guided, and followed to remain interested before he opens up. A Scorpio man needs a challenge and often chooses partners that are already taken or playing hard to get.",
@@ -389,7 +389,7 @@ const sagittarius = {
         likes: "Freedom, travel, philosophy, being outdoors",
         dislikes: "Clingy people, being constrained, off-the-wall theories, details"
     },
-    Brief:
+    Personality:
         "Curious and energetic, Sagittarius are the travelers of the zodiac. Their open mind and philosophical view motivate them to wander around the world in search of the meaning of life. Sagittarius is an extrovert, always optimistic, full of enthusiasm, and ready for changes. This is a Sun sign of individuals who are often preoccupied with mental work, but when they find grounding, they show their ability to transform visions and thoughts into concrete actions and circumstances.",
     AttractMan:
         "Sagittarius men are fun-loving people and eternal travelers, interested in religion, philosophy and the meaning of everything. A man born with the Sun in this sign loves adventures and sees life as a pool of endless possibilities. He wants to explore each and every one of them to determine where the truth lies and which direction to take. He is honest, courageous, optimistic, and a restless wandered in constant search for his new destination. To win his heart, one has to share his quest, appreciate his wisdom and respect his opinions.",
@@ -436,7 +436,7 @@ const capricorn = {
         likes: "Family, tradition, music, understated status, quality craftsmanship",
         dislikes: "Almost everything at some point"
     },
-    Brief:
+    Personality:
         "Capricorn is a sign that represents time and responsibility, and its representatives are traditional and often very serious by nature. These individuals possess an inner state of independence that enables significant progress both in their personal and professional lives. They are masters of self-control and have the ability to lead the way, make solid and realistic plans, and manage many people who work for them at any time. They will learn from their mistakes and get to the top based solely on their experience and expertise.",
     AttractMan:
         "Capricorn men are determined and ambitious people, who want to reach the top to get the rewards. He prefers reality over uncatchable dreams, but isn't afraid to set some of their more realistic dreams in motion. His need for control is strong, and he could be judgmental towards his partners, expecting them to be something they really aren't. His nature is wrapped up around accomplishment and responsibility and he often doesn't set romantic relationships on the top of his priority list.",
@@ -482,7 +482,7 @@ const aquarius = {
         likes: "Fun with friends, risky business, fighting for causes, intellectual conversations.",
         dislikes: "Limitations, broken promises, being lonely, dull or boring situations."
     },
-    Brief:
+    Personality:
         "Aquarius is the sign different from the rest of the zodiac and people born with their Sun in it feel special. This makes them eccentric and energetic in their fight for freedom, or at times shy and quiet, afraid to express their true personality. In both cases they are deep thinkers and highly intellectual people who love to fight for idealistic causes. They are able to see people without prejudice and this makes them truly special. Although they can easily adapt to the energy that surrounds them, Aquarius representatives have a deep need to have some time alone and away from everything in order to restore power.",
     AttractMan:
         "Aquarius men are unpredictable, intelligent, social, independent and excellent communicators. They are also unreliable and inflexible, but changed by the right partner at least up to a point where they check time on their wrist watch. An Aquarius man sometimes lives inside his mind, and needs a companion to talk about his progressive thoughts and ideas. In a game of seduction, one must first become their friend and everything else will come second. As things fall into place and he discovers he found trust for the person standing in front of them, each Aquarius has a chance to meet their own boundaries and see if there is anything else they need to break.",
@@ -529,7 +529,7 @@ const pisces = {
         likes: "Being alone, love, sleeping, music, romance, swimming, spiritual themes",
         dislikes: "Know-it-all, being criticized, the past coming back to haunt, cruelty of any kind"
     },
-    Brief:
+    Personality:
         "Pisces are very friendly and often find themselves in company of very different people. They are selfless and always willing to help others, a very fine intent for as long as they don't expect anything much in return. People born with their Sun in Pisces have an intuitive understanding of the life cycle and form incredible emotional relationship with other humans on the basis of natural order and senses guiding them.",
     AttractMan:
         "If a man is born with his Sun in the sign of Pisces lives only to love and please their partner. He needs a partner who is practical and caring, ready to keep at least one of his feet on the ground and connected to the material world. Sensitivity, compassion and kindness won't lack, but there could be a lot of shady activities in his spare time. He finds extreme joy in discovering presents their partner needs and buying them on any upcoming occasion.",
@@ -555,6 +555,50 @@ const pisces = {
             Zodiac: "Taurus",
             Sign: "taurus",
             Dates: "Apr 20 - May 20"
+        }
+    }
+};
+
+const ophiuchus = {
+    Zodiac: "Ophiuchus",
+    Sign: "ophiuchus",
+    Element: "Fire",
+    Color: "Purple",
+    Quality: "Unknown",
+    Day: "Unknown",
+    Ruler: "Jupiter",
+    GreatestCompatibility: "Leo, Gemini, Capricorn",
+    LuckyNumbers: "Unknown",
+    Dates: "November 29 - December 17",
+    Traits: {
+        Strengths: "Lively people, wise, fight for what is rightand call a spade a spade, passionate thinkers, love to experiment and keep doing something new.",
+        Weaknesses: "low resilience and patience, very secretive, very impulsive, desire to escape reality, suspicious, since they call a spade a spade, they often end up offending people by their words. ",
+        likes: "peace and harmony, surrounded by others, vibrant colors especially for clothing, seek higher education, like their lives to be full of passion and excitement",
+        dislikes: "monotonous routine in life, following rules, regulations and abide by the restrictions, irrelevant details and are focused on the subject"
+    },
+    Personality:
+        "Ophiuchus represents the courage and perseverance of fighting against death and people under the Ophiuchus sign can hardly be defeated. Being loyal and steady, they have a strict standard on the good and the evil. In addition, Ophiuchus people have their own ideal and goal and always stride forward to challenges with the strong motivation. <br><br> Since Ophiuchus is a constellation consisting of two (Ophiuchus and Serpens), people under this sign have an entangled character, just like the war between Ophiuchus and Serpens: sometimes they are rational and sometimes sensitive; sometimes philanthropic and sometimes indifferent. That's why they often wonder whether they are like Scorpian or Sagittarian. No matter what they are like, however, they cannot deny the trait of the other half.",
+    LoveAndRomance: "Ophiuchus' traits in mythology are associated with healing, so it's likely that this quality would extend into their love lives, too. Ophiuchans would likely seek partners whom they can grow and overcome things with — people who aren't going to shy away from the difficult truths or deep fears that can come up in relationships. Similar to fiery Sagittarians, Ophiuchans are thought to be passionate lovers who will fully immerse themselves in the adventure and thrill of romance. <br><br> Because the sign of Ophiuchus would fall in between Scorpio and Sagittarius in the zodiac, it's theorized that its astrological traits could be influenced by these signs, too. Ophiuchans would likely be intense and mysterious people with a powerful presence — somewhat similar to the way Scorpio zodiac signs are perceived. And like Sagittarius zodiac signs, they'd likely be blessed with good luck, a taste for adventure, and a great sense of humor. Passionate and goal-oriented, these serpent bearers would have exciting, edgy, and enticing personalities that make them magnets for attention and acclaim.",
+    Myth: {
+        one: "The name of this large constellation means “serpent-bearer” in Greek. The ancient astronomer Ptolemy included Ophiuchus in his list of 48 constellations which he documented in the 2nd century. (It used to be referred to as Serpentarius, which is Latin and has the same meaning.) It is still one of the 88 modern constellations.",
+        two: "In Greek myth, Ophiuchus was said to depict the god Apollo wrestling the snake guarding the Oracle of Delphi.Although the myth changed many times over the years, it was always associated with a man wrestling a serpent.",
+        three: "The snake is often associated with doctors, so Ophiuchus is often associated with healing images. The Romans associated the constellation with Asclepius, who learned the secret to immortality by watching one serpent treat another serpent with healing herbs."
+    },
+    CompatibleSigns: {
+        one: {
+            Zodiac: "Leo",
+            Sign: "leo",
+            Dates: "Jul 23 - Aug 22"
+        },
+        two: {
+            Zodiac: "Gemini",
+            Sign: "gemini",
+            Dates: "May 21 - June 20"
+        },
+        three: {
+            Zodiac: "Capricorn",
+            Sign: "capricorn",
+            Dates: "Dec 21 - Jan 20"
         }
     }
 };
