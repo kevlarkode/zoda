@@ -63,17 +63,17 @@
   ],
   "screenshots": [
     {
-      "src": "/assets/img/screenshots/screenshot_01.png",
+      "src": "/assets/img/screenshots/screenshot_01.jpg",
       "sizes": "1080x1920",
       "type": "image/png"
     },
     {
-      "src": "/assets/img/screenshots/screenshot_02.png",
+      "src": "/assets/img/screenshots/screenshot_02.jpg",
       "sizes": "1080x1920",
       "type": "image/png"
     },
     {
-      "src": "/assets/img/screenshots/screenshot_03.png",
+      "src": "/assets/img/screenshots/screenshot_03.jpg",
       "sizes": "1080x1920",
       "type": "image/png"
     }
