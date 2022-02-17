@@ -27,16 +27,16 @@
 
 /* text selection color */
 ::-moz-selection {
-  background: hsla(221, 62%, 63%, 0.75);
+  background: hsla(0, 62%, 63%, 0.75);
   color: #fff;
 }
 ::selection {
-  background: hsla(221, 62%, 63%, 0.75);
+  background: hsla(0, 62%, 63%, 0.75);
   color: #fff;
 }
 
 body {
-  background-color: hsl(221, 43%, 24%);
+  background-color: hsl(0, 43%, 24%);
   font-family: sans-serif;
   font-family: "Montserrat", sans-serif;
   color: #eee;
@@ -53,7 +53,7 @@ body {
 }
 
 header {
-  background-color: hsl(221, 37%, 35%);
+  background-color: hsl(0, 37%, 35%);
 }
 
 header p {
@@ -83,7 +83,7 @@ header p {
 }
 
 nav {
-  background-color: hsl(221, 43%, 18%);
+  background-color: hsl(0, 43%, 18%);
 }
 
 .navigation-large-screen ul {
@@ -91,7 +91,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   padding: 1.5rem;
-  background-color: hsl(221, 43%, 18%);
+  background-color: hsl(0, 43%, 18%);
 }
 
 .navigation-large-screen ul li {
@@ -119,7 +119,7 @@ nav {
 }
 
 footer {
-  background-color: hsl(221, 37%, 35%);
+  background-color: hsl(0, 37%, 35%);
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -144,7 +144,7 @@ footer .link {
 }
 
 .cards-div {
-  background-color: hsl(221, 43%, 31%);
+  background-color: hsl(0, 43%, 31%);
   padding: 1rem;
 }
 
@@ -186,7 +186,7 @@ footer .link {
 }
 
 .card-header {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 1rem 0;
   width: 100%;
@@ -205,23 +205,23 @@ footer .link {
   width: 100%;
   background-color: var(--glass-2);
   border-radius: 0 0 0.5rem 0.5rem;
-  font-size: 1.4rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .card-footer span {
   padding-top: 1rem;
   display: flex;
   padding-left: 1rem;
   padding-right: 1rem;
+  font-weight: bold;
 }
 .card-footer p {
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-weight: bold;
   text-align: center;
 }
 
