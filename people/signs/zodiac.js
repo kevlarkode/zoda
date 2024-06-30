@@ -5,33 +5,33 @@ const aries = {
   People: {
     one: {
       serial_num: "1",
-      name: "Leonardo Da Vinci",
-      profession: "Italian polymath",
-      born: "15 April, 1452",
-    },
-    two: {
-      serial_num: "2",
       name: "Charlie Chaplin",
       profession: "Comic actor",
       born: "16 April, 1889",
     },
-    three: {
-      serial_num: "3",
+    two: {
+      serial_num: "2",
       name: "Emma Watson",
       profession: "English actress",
       born: "15 April, 1990",
     },
-    four: {
-      serial_num: "4",
+    three: {
+      serial_num: "3",
       name: "Jackie Chan",
       profession: "Chinese actor",
       born: "7 April, 1954",
     },
-    five: {
-      serial_num: "5",
+    four: {
+      serial_num: "4",
       name: "Lady Gaga",
       profession: "American singer",
       born: "28 March, 1986",
+    },
+    five: {
+      serial_num: "5",
+      name: "Leonardo Da Vinci",
+      profession: "Italian polymath",
+      born: "15 April, 1452",
     },
     six: {
       serial_num: "6",
