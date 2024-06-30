@@ -16,6 +16,16 @@
   --glass: hsla(0, 0%, 100%, 0.1);
   --glass-2: hsla(0, 0%, 100%, 0.2);
 }
+:root {
+  --glass: hsla(0, 0%, 100%, 0.1);
+  --glass-1: hsla(0, 0%, 50%, 0.1);
+  --glass-2: hsla(0, 0%, 100%, 0.2);
+  --body-color: hsl(0, 0%, 24%);
+  --theme-color-1: #333;
+  --theme-color-2: #111;
+  --theme-color-3: #1f1f1f;
+  --theme-color-4: #eee;
+}
 
 *,
 *::before,
@@ -27,16 +37,17 @@
 
 /* text selection color */
 ::-moz-selection {
-  background: hsla(0, 62%, 63%, 0.75);
+  background: hsla(0, 0%, 50%, 0.75);
   color: #fff;
 }
 ::selection {
-  background: hsla(0, 62%, 63%, 0.75);
+  background: hsla(0, 0%, 50%, 0.75);
   color: #fff;
 }
 
 body {
   background-color: hsl(0, 43%, 24%);
+  background-color: var(--body-color);
   font-family: sans-serif;
   font-family: "Montserrat", sans-serif;
   color: #eee;
@@ -54,6 +65,7 @@ body {
 
 header {
   background-color: hsl(0, 37%, 35%);
+  background-color: var(--theme-color-1);
 }
 
 header p {
@@ -84,6 +96,7 @@ header p {
 
 nav {
   background-color: hsl(0, 43%, 18%);
+  background-color: var(--theme-color-2);
 }
 
 .navigation-large-screen ul {
@@ -92,6 +105,7 @@ nav {
   align-items: center;
   padding: 1.5rem;
   background-color: hsl(0, 43%, 18%);
+  background-color: var(--theme-color-2);
 }
 
 .navigation-large-screen ul li {
@@ -120,6 +134,7 @@ nav {
 
 footer {
   background-color: hsl(0, 37%, 35%);
+  background-color: var(--theme-color-1);
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -145,6 +160,7 @@ footer .link {
 
 .cards-div {
   background-color: hsl(0, 43%, 31%);
+  background-color: var(--theme-color-3);
   padding: 1rem;
 }
 
@@ -217,6 +233,7 @@ footer .link {
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: bold;
+  text-align: center;
 }
 .card-footer p {
   padding-bottom: 1rem;
@@ -228,5 +245,85 @@ footer .link {
 @media screen and (max-width: 750px) {
   .card {
     width: 95%;
+  }
+}
+
+
+.error-div-wrapper {
+  padding: 2rem;
+}
+
+.error-div {
+  max-width: 925px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #141414;
+  box-shadow: 1px 1px 25px 3px #000;
+  border: 2px solid hsl(65, 45%, 49%);
+  border-radius: 0.5rem;
+  max-width: 925px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh;
+}
+
+.error-div h2 {
+  padding: 1rem;
+  font-size: 3.5rem;
+  color: hsl(65, 97%, 75%);
+  text-align: center;
+}
+
+.error-div p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  color: hsl(65, 100%, 90%);
+  max-width: 80%;
+}
+
+.error-div .btn-div {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+#reload {
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  background-color: hsl(200, 60%, 32%);
+  color: white;
+  color: #eee;
+  font-weight: bold;
+  border-radius: 2rem;
+  border: 3px solid white;
+  cursor: pointer;
+  margin: 0.5rem;
+  box-shadow: 1px 1px 10px hsla(0, 0%, 100%, 0.5);
+}
+
+#go-home {
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  background-color: hsl(120, 60%, 32%);
+  color: #eee;
+  font-weight: bold;
+  border-radius: 2rem;
+  border: 3px solid white;
+  cursor: pointer;
+  margin: 0.5rem;
+  box-shadow: 1px 1px 10px hsla(0, 0%, 100%, 0.5);
+}
+
+@media screen and (max-width: 750px) {
+  .btn-div {
+    flex-direction: column;
   }
 }

@@ -72,136 +72,7 @@
 
     <main>
 
-        <section class="content">
-
-            <div class="cards-div">
-                <h2>Aries : Famous Personalities</h2>
-                <div class="card-flex container-small">
-                    <div class="card">
-                        <div class="card-header">
-                            <span>Leonardo Da Vinci</span>
-                        </div>
-                        <div class="card-content">
-                            <img src="/assets/img/people/aries/img-1.jpg" alt="1"
-                                style="max-width: 125px; max-height: 125px; border-radius: 50%;" class="card-image">
-                        </div>
-                        <div class="card-footer">
-                            <span>Italian polymath</span>
-                            <p>15 April, 1452</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <span>Charlie Chaplin</span>
-                        </div>
-                        <div class="card-content">
-                            <img src="/assets/img/people/aries/img-2.jpg" alt="1"
-                                style="max-width: 125px; max-height: 125px; border-radius: 50%;" class="card-image">
-                        </div>
-                        <div class="card-footer">
-                            <span>Comic actor</span>
-                            <p>16 April, 1889</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <span>Emma Watson</span>
-                        </div>
-                        <div class="card-content">
-                            <img src="/assets/img/people/aries/img-3.jpg" alt="1"
-                                style="max-width: 125px; max-height: 125px; border-radius: 50%;" class="card-image">
-                        </div>
-                        <div class="card-footer">
-                            <span>English actress</span>
-                            <p>15 April, 1990</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-flex container-small">
-                    <div class="card">
-                        <div class="card-header">
-                            <span>Jackie Chan</span>
-                        </div>
-                        <div class="card-content">
-                            <img src="/assets/img/people/aries/img-4.jpg" alt="1"
-                                style="max-width: 125px; max-height: 125px; border-radius: 50%;" class="card-image">
-                        </div>
-                        <div class="card-footer">
-                            <span>Chinese actor</span>
-                            <p>7 April, 1954</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <span>Lady Gaga</span>
-                        </div>
-                        <div class="card-content">
-                            <img src="/assets/img/people/aries/img-5.jpg" alt="1"
-                                style="max-width: 125px; max-height: 125px; border-radius: 50%;" class="card-image">
-                        </div>
-                        <div class="card-footer">
-                            <span>American singer</span>
-                            <p>28 March, 1986</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <span>Robert Downey Jr</span>
-                        </div>
-                        <div class="card-content">
-                            <img src="/assets/img/people/aries/img-6.jpg" alt="1"
-                                style="max-width: 125px; max-height: 125px; border-radius: 50%;" class="card-image">
-                        </div>
-                        <div class="card-footer">
-                            <span>American actor</span>
-                            <p>4 April, 1965</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-flex container-small">
-                    <div class="card">
-                        <div class="card-header">
-                            <span>Ronaldinho</span>
-                        </div>
-                        <div class="card-content">
-                            <img src="/assets/img/people/aries/img-7.jpg" alt="1"
-                                style="max-width: 125px; max-height: 125px; border-radius: 50%;" class="card-image">
-                        </div>
-                        <div class="card-footer">
-                            <span>Brazilian footballer</span>
-                            <p>21 March, 1980</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <span>Vincent van Gogh</span>
-                        </div>
-                        <div class="card-content">
-                            <img src="/assets/img/people/aries/img-8.jpg" alt="1"
-                                style="max-width: 125px; max-height: 125px; border-radius: 50%;" class="card-image">
-                        </div>
-                        <div class="card-footer">
-                            <span>Dutch painter</span>
-                            <p>30 March, 1853</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <span>Wilhelm Röntgen</span>
-                        </div>
-                        <div class="card-content">
-                            <img src="/assets/img/people/aries/img-9.jpg" alt="1"
-                                style="max-width: 125px; max-height: 125px; border-radius: 50%;" class="card-image">
-                        </div>
-                        <div class="card-footer">
-                            <span>German engineer</span>
-                            <p>27 March, 1845</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
+        <!-- dynamic content to be injected here -->
 
     </main>
 
@@ -220,7 +91,15 @@
         document.querySelector('#year').innerHTML = new Date().getFullYear();
     </script>
 
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const queryParamZodiacSign = urlParams.get('sign');
+        // const queryParamUserName = urlParams.get('user');
+    </script>
+
     <!-- </div> -->
+
+    <script src="./zodiac.js"></script>
 
     <script src="./script.js"></script>
 
